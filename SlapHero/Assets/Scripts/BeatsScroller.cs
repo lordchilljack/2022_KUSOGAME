@@ -19,14 +19,14 @@ public class BeatsScroller : MonoBehaviour
     {
         if (!WasStarted)
         {
-            if (Input.anyKeyDown)
+            /*if (Input.anyKeyDown)
             {
                 WasStarted = true;
-            }
-            else
-            {
-                transform.position -= new Vector3(0f, BeatTempo * Time.deltaTime, 0f);
-            }
+            }*/
+        }
+        else
+        {
+            transform.position -= new Vector3(0f, BeatTempo * Time.deltaTime, 0f);
         }
     }
 }
