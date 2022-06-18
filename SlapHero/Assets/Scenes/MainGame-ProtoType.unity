@@ -1174,6 +1174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultImg: {fileID: 0}
   PressedImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  BeatHolder: {fileID: 1881669989}
   KeyToPress: 103
 --- !u!50 &375874625
 Rigidbody2D:
@@ -3144,6 +3145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultImg: {fileID: 0}
   PressedImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  BeatHolder: {fileID: 1881669989}
   KeyToPress: 107
 --- !u!50 &927214536
 Rigidbody2D:
@@ -3686,6 +3688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultImg: {fileID: 0}
   PressedImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  BeatHolder: {fileID: 1881669989}
   KeyToPress: 104
 --- !u!50 &1226687756
 Rigidbody2D:
@@ -4550,6 +4553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultImg: {fileID: 0}
   PressedImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  BeatHolder: {fileID: 1881669989}
   KeyToPress: 106
 --- !u!50 &1702109265
 Rigidbody2D:

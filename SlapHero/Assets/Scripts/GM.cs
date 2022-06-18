@@ -25,10 +25,10 @@ public class GM : MonoBehaviour
     public TextMeshProUGUI multiplerText;
 
     public float TotalNotes;
-    public float NormalHits;
-    public float GoodHits; 
-    public float PerfectHits;
-    public float MissHits;
+    public float NormalHits = 0.0f;
+    public float GoodHits = 0.0f; 
+    public float PerfectHits = 0.0f;
+    public float MissHits = 0.0f;
 
     public GameObject ResultScreen;
     public TextMeshProUGUI PercentageText, NormalHitsText, GoodHitsText, PerfectHitsText, MissedHitsText,RankText,FinalScoreText;
