@@ -6,6 +6,9 @@ public class NoteObj : MonoBehaviour
 {
     public bool CanBePressed;
     public KeyCode KeyToPress;
+
+    public GameObject Hiteffect,GoodEffect,PerfectEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,22 @@ public class NoteObj : MonoBehaviour
             if (CanBePressed)
             {
                 gameObject.SetActive(false);
-                GM.instance.NoteHit();
+                //GM.instance.NoteHit();
+                if (Mathf.Abs(transform.position.y) > 0.75)
+                {
+                    GM.instance.NormalHit();
+                    Instantiate(Hiteffect, transform.position, Hiteffect.transform.rotation);
+                }
+                else if (Mathf.Abs(transform.position.y) > 0.25)
+                {
+                    GM.instance.GoodHit();
+                    Instantiate(GoodEffect, transform.position, GoodEffect.transform.rotation);
+                }
+                else
+                {
+                    GM.instance.PerfectHit();
+                    Instantiate(PerfectEffect, transform.position, PerfectEffect.transform.rotation);
+                }
             }
         }
     }
